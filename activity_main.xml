@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_200"
+    tools:context=".MainActivity"
+android:padding="24dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/total_question"
+        android:text="Total Questions"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        />
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+android:text="Do you feel very anxious or worry about a lot of things?"
+android:textColor="@color/white"
+android:textSize="24dp"
+android:layout_above="@id/choice_layout"
+android:textAlignment="center"
+android:layout_margin="20dp"
+android:id="@+id/question"
+android:textStyle="bold"/>
+
+
+    <LinearLayout
+        android:id="@+id/choice_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/ans_0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:text="0"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/ans_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:text="1"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/ans_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:text="2"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/ans_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:text="3"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/ans_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:text="4"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/ans_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:text="5"
+            android:textColor="@color/black" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/choice_layout"
+        android:layout_marginTop="40dp"
+        android:text="Submit" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
